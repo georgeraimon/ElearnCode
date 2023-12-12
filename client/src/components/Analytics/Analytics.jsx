@@ -123,19 +123,19 @@ export default function Analytics() {
     ],
   };
 
-  {/*const options = {
+  const options = {
     height: "45rem",
     width: "100%",
     hideTabs: false,
-  };*/}
-  const options = {
+  }
+  {/*const options = {
     height: "800px",
     width: "1500px",
     hideTabs: false,
     toolbar: "top",
     token: "your_token",
   }
-
+*/} 
   return (
     <div>
       {loading ? (
