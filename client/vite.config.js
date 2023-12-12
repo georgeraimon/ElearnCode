@@ -12,7 +12,7 @@ export default defineConfig({
     "types": ["ace-builds"]
   },
    build: {
-    chunkSizeWarningLimit: 1600,
+    chunkSizeWarningLimit: 16000,
         rollupOptions: {
             output:{
                 manualChunks(id) {
