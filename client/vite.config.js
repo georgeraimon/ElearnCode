@@ -12,7 +12,7 @@ export default defineConfig({
     "types": ["ace-builds"]
   },
    build: {
-        chunkSizeWarningLimit: 1600
+        chunkSizeWarningLimit: 2600
     }
 })
 /*import { defineConfig, loadEnv } from 'vite'
