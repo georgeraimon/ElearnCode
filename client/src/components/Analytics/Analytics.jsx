@@ -131,7 +131,7 @@ export default function Analytics() {
   const options = {
     height: "1000px",
     width: "2500px",
-    hideTabs: true,
+    hideTabs: false,
     toolbar: "top",
     device: "default",
     token: "your_token",
