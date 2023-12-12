@@ -11,7 +11,9 @@ export default defineConfig({
   "compilerOptions": {
     "types": ["ace-builds"]
   },
-  
+   build: {
+        chunkSizeWarningLimit: 1600
+    }
 })
 /*import { defineConfig, loadEnv } from 'vite'
 import react from '@vitejs/plugin-react'
