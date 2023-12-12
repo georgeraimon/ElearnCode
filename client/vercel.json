@@ -1,14 +1,14 @@
 {
 "builds": [
 {
-"src": "./main.jsx",
+"src": "./index.html",
 "use": "@vercel/node"
 }
 ],
 "routes": [
 {
 "src": "/(.*)",
-"dest": "/main.jsx"
+"dest": "/index.html"
 }
 ]
 }
