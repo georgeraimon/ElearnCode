@@ -10,7 +10,7 @@ export default defineConfig({
   },
   "compilerOptions": {
     "types": ["ace-builds"]
-  }
+  },
    build: {
         rollupOptions: {
             output:{
