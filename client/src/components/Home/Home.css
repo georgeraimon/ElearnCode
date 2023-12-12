@@ -1,0 +1,37 @@
+.home-container{
+    padding-top: 20vh;
+    /* background-color: #d5f7d5; */
+    background-color: #ecf8fd;
+    padding-bottom: 10vh;
+}
+
+
+.header .heading{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.header .sub-heading{
+    color: #000;
+    font-size: 25px;
+    font-weight: 600;
+    color:  #23b0cf;
+}
+.header .join-button{
+    text-align: center;
+    width: 180px;
+    height: 50px;
+    background-color:  #23b0cf;
+    border: 0px solid #000;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 8px;
+}
+
+.banner{
+    width: 560px;
+    border-radius: 20px;
+}
