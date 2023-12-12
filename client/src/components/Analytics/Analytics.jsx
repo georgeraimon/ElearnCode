@@ -133,7 +133,6 @@ export default function Analytics() {
     width: "1500px",
     hideTabs: false,
     toolbar: "top",
-    device: "default",
     token: "your_token",
   }
 
