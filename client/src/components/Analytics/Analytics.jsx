@@ -129,8 +129,8 @@ export default function Analytics() {
     hideTabs: false,
   };*/}
   const options = {
-    height: "1000px",
-    width: "2500px",
+    height: "800px",
+    width: "1500px",
     hideTabs: false,
     toolbar: "top",
     device: "default",
