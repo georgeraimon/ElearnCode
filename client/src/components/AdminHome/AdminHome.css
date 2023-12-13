@@ -29,7 +29,7 @@
     top: 7vh;
     right: 0;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     text-align: center;
     cursor: pointer;
     transition: transform 0.3s;
@@ -38,12 +38,15 @@
 .admin-home .admin-track .add-track button{
     background-color: #23b0cf;
     color: #fff;
-    padding: 0.5rem 0.5rem;
+    padding: 0.2rem 0.2rem; /* Reduced padding */
     border-radius: 7px;
     font-family: 'Roboto Slab', serif;
-    font-size: 1.1rem;
-    width: 9rem;
+    font-size: 0.8rem; /* Reduced font size */
+    width: 5rem;
+    box-sizing: border-box; /* Added box-sizing */
 }
+
+
 
 .admin-home .admin-track .add-track button:hover{
     background-color: #23b0cf;
@@ -101,8 +104,8 @@
     color: #fff;
     font-family: 'Roboto Slab', serif;
     font-size: 1.1rem;
-    border-radius: 8px;
-    width: 6.3rem;
+    border-radius: 7px;
+    width: 6rem;
 }
 
 .admin-home .admin-logout{
@@ -121,7 +124,7 @@
     background-color: #23b0cf;
     color: #fff;
     padding: 0.5rem 0.5rem;
-    border-radius: 7px;
+    border-radius: 6px;
     font-family: 'Roboto Slab', serif;
     font-size: 1.1rem;
     width: 9rem;
@@ -135,4 +138,66 @@
     margin-top: 12vh;
     margin-bottom: 3vh;
     text-align: center;
+}
+@media only screen and (max-width: 600px) {
+    .admin-home .admin-home-heading h1{
+      font-size: 1.5rem;
+    }
+  
+    .admin-home .admin-track .admin-track-heading h2{
+      font-size: 2rem;
+    }
+  
+    .admin-home .admin-track .add-track button{
+      font-size: 0.8rem;
+      width: 5rem;
+    }
+  
+    .admin-home .admin-track .tracks thead{
+      font-size: 1.2rem;
+    }
+  
+    .admin-home .admin-track .tracks tbody .title{
+      font-size: 1.5rem;
+    }
+  
+    .admin-home .admin-track .tracks tbody .desc{
+      font-size: 0.9rem;
+    }
+  
+    .admin-home .admin-track .tracks tbody .act button{
+      font-size: 0.8rem;
+      width: 5rem;
+    }
+  
+    .admin-home .admin-logout button{
+      font-size: 0.8rem;
+      width: 6rem;
+    }
+    
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .admin-home .admin-track .add-track button{
+      font-size: 0.8rem;
+      width: 7rem;
+    }
+  
+    .admin-home .admin-track .tracks tbody .title{
+      font-size: 1.5rem;
+    }
+  
+    .admin-home .admin-track .tracks tbody .desc{
+      font-size: 0.9rem;
+    }
+  
+    .admin-home .admin-track .tracks tbody .act button{
+      font-size: 0.8rem;
+      width: 5rem;
+    }
+  
+    .admin-home .admin-logout button{
+      font-size: 0.8rem;
+      width: 7rem;
+    }
 }
