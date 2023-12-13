@@ -3,11 +3,14 @@ import { useNavigate } from "react-router-dom";
 import { Table, Button } from "react-bootstrap";
 import { FiPlus, FiEdit3 } from "react-icons/fi";
 import { MdDeleteOutline, MdOutlineOpenInNew } from "react-icons/md";
+import PreLoader from "../PreLoader/PreLoader";
 import "./AdminHome.css";
+
+
 
 export default function AdminHome() {
   const navigate = useNavigate();
-
+  const [loading, setLoading] = useState(false);
   const [name, setName] = useState("");
   const [tracks, setTracks] = useState([]);
 
@@ -44,6 +47,10 @@ export default function AdminHome() {
           }
         });
     }
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 2500);
   }, [navigate]);
 
   const trackDelete = (id) => {
@@ -64,6 +71,9 @@ export default function AdminHome() {
 
   return (
     <div>
+       {loading ? (
+        <PreLoader />
+      ) : (
       <div className="container admin-home">
         {/*Main Heading */}
         <div className="admin-home-heading">
@@ -74,7 +84,7 @@ export default function AdminHome() {
         <div className="container admin-track">
           {/* Tacks Heading */}
           <div className="admin-track-heading">
-            <h2>Avaliable Content</h2>
+            <h2>Avaliable Subjects</h2>
           </div>
 
           {/* Logut Admin */}
@@ -96,7 +106,7 @@ export default function AdminHome() {
               variant="primary"
               onClick={() => navigate("/admin_add_track")}
             >
-              <FiPlus /> Add Topic
+              <FiPlus /> Add Subject
             </Button>
           </div>
 
@@ -113,8 +123,8 @@ export default function AdminHome() {
                   </tr>
                 </thead>
                 <tbody>
-                  {tracks.map((track) => (
-                    <tr key={track._id}>
+                {tracks.map((track) => (
+                <tr key={track._id}>
                       <td>
                         <img src={track.image} alt={track.name} />
                       </td>
@@ -151,11 +161,12 @@ export default function AdminHome() {
             </div>
           ) : (
             <div className="no-tracks">
-              <h3>No Content Available</h3>
+              <h3>No Subject Available</h3>
             </div>
           )}
         </div>
       </div>
+      )}
     </div>
   );
 }
