@@ -2,7 +2,6 @@
     padding-top: 10vh;
     background-color: #ecfbfd;
     padding-bottom: 10vh;
-    /* margin-bottom: 10vh; */
     text-align: center;
 }
 
@@ -16,4 +15,15 @@
     font-size: 26px;
     font-weight: 500;
     color: #0d056c;
+}
+
+/* Media query for devices with width less than or equal to 768px */
+@media (max-width: 768px) {
+    .numbers .number-icon{
+        height: 60px;
+    }
+
+    .numbers .number-text{
+        font-size: 20px;
+    }
 }
