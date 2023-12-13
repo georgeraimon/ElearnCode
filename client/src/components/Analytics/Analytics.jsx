@@ -170,7 +170,7 @@ export default function Analytics() {
                     return null;
                   })}
                 </Form.Select>
-                <h1 className="main-heading">Courses Done in Year {year}</h1>
+                <h2 className="main-heading">Courses Done in Year {year}</h2>
                 <Bar
                   data={BarData}
                   options={{
