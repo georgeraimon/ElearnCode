@@ -4,11 +4,12 @@ import { Table, Button, Modal } from "react-bootstrap";
 import { FiPlus, FiEdit3 } from "react-icons/fi";
 import { MdDeleteOutline, MdOutlineOpenInNew } from "react-icons/md";
 import ReactPlayer from "react-player";
+import PreLoader from "../PreLoader/PreLoader";
 import "./AdminTrack.css";
 
 export default function AdminTrack() {
   const navigate = useNavigate();
-
+  const [loading, setLoading] = useState(false);
   const { id } = useParams();
   const [name, setName] = useState("");
   const [courses, setCourse] = useState([]);
@@ -50,6 +51,10 @@ export default function AdminTrack() {
           }
         });
     }
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 2500);
   }, [id, navigate]);
 
   const deleteCourse = (cid) => {
@@ -71,6 +76,9 @@ export default function AdminTrack() {
 
   return (
     <div>
+      {loading ? (
+        <PreLoader />
+      ) : (
       <div className="container admin-home">
         {/*Main Heading */}
         <div className="admin-home-heading">
@@ -149,13 +157,18 @@ export default function AdminTrack() {
                         </Modal.Header>
                         <Modal.Body>
                           {course.videos.map((video) => (
-                            <ReactPlayer
-                              className="react-player"
-                              url={video}
-                              controls
-                              width="30rem"
-                              height="20rem"
-                            />
+                           <ReactPlayer
+                           className="react-player"
+                           url={video}
+                           controls={true}
+                           width="30rem"
+                           height="20rem"
+                           playing="false"
+                           
+                           onReady
+                         />
+                          
+                        
                           ))}
                         </Modal.Body>
                         <Modal.Footer>
@@ -176,6 +189,7 @@ export default function AdminTrack() {
           )}
         </div>
       </div>
+      )}
     </div>
   );
 }
