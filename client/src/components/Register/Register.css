@@ -122,60 +122,6 @@
     left: 13rem;
 }
 
-/* set .register-container .card-icon class responsive*/
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .register-container{
-        padding-top: 20vh;
-        background-color:#d5eef7;
-        padding-bottom: 10vh;
-        margin-top: 10vh;
-    }
-    .register-container .card-top .card-icon{
-        left: 12.5rem;
-    }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    .register-container{
-        padding-top: 20vh;
-        background-color:#d5ebf7;
-        padding-bottom: 10vh;
-        margin-top: 10vh;
-    }
-    .register-container .card-top .card-icon{
-        left: 13rem;
-    }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    .register-container{
-        padding-top: 20vh;
-        background-color:#d5eff7;
-        padding-bottom: 10vh;
-        margin-top: 10vh;
-    }
-    .register-container .card-top .card-icon{
-        left: 12.4rem;
-    }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    .register-container .card-top .card-icon{
-        left: 13rem;
-    }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    .register-container .card-top .card-icon{
-        left: 13rem;
-    }
-}
-
 .register-container .card-top .card-icon img{
     width: 80px;
 }
@@ -219,4 +165,67 @@
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .navbar{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .nav-logo{
+        width: 90px;
+        height: 40px;
+    }
+
+    .navbar-links span{
+        font-size: 14px;
+        padding: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .buttons button{
+        width: 60px;
+        font-size: 14px;
+        padding: 4px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .register-container{
+        padding-top: 10vh;
+        padding-bottom: 5vh;
+    }
+
+    .register-container .auth-image{
+        height: 300px;
+    }
+
+    .register-container .left-logo{
+        width: 275px;
+    }
+
+    .register-container .register-button,
+    .register-container .login-button{
+        width: 7.5rem;
+        height: 2.5rem;
+        font-size: 15px;
+    }
+
+    .register-container .card-top .card-icon img{
+        width: 40px;
+    }
+
+    .register-container .register-card .register-form .submit-button{
+        font-size: 14px;
+        padding: 3px;
+        width: 5rem;
+    }
+
+    .register-card .register-form .error-message{
+        font-size: 16px;
+    }
 }
