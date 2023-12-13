@@ -61,46 +61,49 @@
 .footer .footer-text .footer-icon:hover{
     transform: translateY(-6px);
 
+    
+}
+.numbers .number-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 @media screen and (max-width: 768px) {
     .footer .footer-logo img{
-        width: 120px;
+        width: 110px;
     }
 
     .footer .footer-text h2{
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     .footer .footer-text p,
     .footer .footer-contact p{
-        font-size: 16px;
+        font-size: 15px;
     }
 
     .footer .footer-contact h2{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .footer .footer-contact a{
-        font-size: 18px;
+        font-size: 17px;
     }
 
     .footer .footer-contact .contact-icon{
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 }
 
 @media screen and (max-width: 480px) {
     .footer .footer-logo img{
-        width: 80px;
+        width: 90px;
     }
 
-    .footer .footer-text h2{
-        font-size: 1.3rem;
-    }
-
+    .footer .footer-text h2,
     .footer .footer-contact h2{
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .footer .footer-text p,
@@ -115,4 +118,5 @@
     .footer .footer-contact .contact-icon{
         font-size: 1.2rem;
     }
+   
 }
