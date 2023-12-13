@@ -260,38 +260,6 @@ router.post("/handleCourseProgress", async (req, res) => {
   }
 });
 
-{/*router.get("/contests", async (_req, res) => {
-  axios 
-    .get(`https://clist.by/api/v4/contest/?username=${process.env.VITE_CLIST_USERNAME}&api_key=${process.env.VITE_CLIST_APIKEY}&format=json`)
-    .then((response) => {
-      const contests = response.data;
-      return res.status(200).json({
-        contests: contests,
-      });
-    })
-    .catch((error) => {
-      console.error("Error fetching data: ", error);
-      return res.status(500).json({ error: "An error occurred while fetching data" });
-    });
-});*/}
-
-router.get("/contests", async (_req, res) => {
-  axios 
-    .get(`https://clist.by/api/v4/contest/?username=${process.env.VITE_CLIST_USERNAME}&api_key=${process.env.VITE_CLIST_APIKEY}&format=json`)
-    .then((response) => {
-      const contests = response.data.objects; // Adjusted this line
-      return res.status(200).json({
-        contests: contests,
-      });
-    })
-    .catch((error) => {
-      console.error("Error fetching data: ", error);
-      return res.status(500).json({ error: "An error occurred while fetching data" });
-    });
-});
-
-
-
 
 router.post("/compile", async (req, res) => {
   const { code, language, input } = req.body;
