@@ -42,8 +42,8 @@
     padding: 0.5rem 0.5rem;
     border-radius: 8px;
     font-family: 'Roboto Slab', serif;
-    font-size: 1.2rem;
-    width: 10rem;
+    font-size: 1rem;
+    width: 8rem;
 }
 
 .admin-home .admin-track .add-track button:hover{
@@ -115,9 +115,9 @@
     margin-left: 2.2vh;
     color: #fff;
     font-family: 'Roboto Slab', serif;
-    font-size: 1.1rem;
+    font-size: 1rem;
     border-radius: 8px;
-    width: 6.3rem;
+    width: 6rem;
 }
 
 .admin-home .admin-track .tracks tbody .view-btn{
@@ -126,9 +126,9 @@
     border: none;
     padding: 0.5rem 0.2rem;
     font-family: 'Roboto Slab', serif;
-    font-size: 1.1rem;
+    font-size: 1rem;
     border-radius: 8px;
-    width: 6.3rem;
+    width: 6rem;
 }
 
 .admin-home .admin-track .tracks tbody .view-btn:hover{
@@ -140,3 +140,13 @@
     margin-left: 3rem;
     margin-right: 3rem;
 }
+@media only screen and (max-width: 600px) {
+    .admin-home .admin-track .add-track button{
+      font-size: 0.8rem;
+      width: 7rem;
+    }
+  
+    .admin-home .admin-track .tracks tbody .act{
+      width: 90%; /* Adjust as needed */
+    }
+  }
