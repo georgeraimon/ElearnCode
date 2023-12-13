@@ -18,12 +18,23 @@
 }
 
 /* Media query for devices with width less than or equal to 768px */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .numbers .number-icon{
         height: 60px;
     }
 
     .numbers .number-text{
         font-size: 20px;
+    }
+}
+
+/* Media query for devices with width less than or equal to 480px */
+@media screen and (max-width: 480px) {
+    .numbers .number-icon{
+        height: 40px;
+    }
+
+    .numbers .number-text{
+        font-size: 14px;
     }
 }
