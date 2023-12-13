@@ -123,7 +123,12 @@ export default function Analytics() {
     ],
   };
 
- const options = {
+  {/*const options = {
+    height: "45rem",
+    width: "100%",
+    hideTabs: false,
+  };*/}
+  const options = {
     height: "45rem",
     width: "100%",
     hideTabs: false,
@@ -131,6 +136,7 @@ export default function Analytics() {
     device:  "default" | "desktop" | "tablet" | "phone",
     token: "your_token",
   }
+
   return (
     <div>
       {loading ? (
@@ -178,7 +184,7 @@ export default function Analytics() {
               </Row>
 
               
-             <Row className="tableau">
+              <Row className="tableau">
       <h1 className="main-heading">Various Programming languages Popularity</h1>
       <TableauEmbed
         sourceUrl="https://public.tableau.com/views/ProgrammingLanguagesPopularity2004-2023/Dashboard1"
