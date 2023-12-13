@@ -18,6 +18,7 @@
 .analytics .analytics-main .bar-chart{
     margin-top: 2vh;
     margin-bottom: 3vh;
+    width:75%;
 }
 
 .analytics .analytics-main .bar-chart .form-label{
