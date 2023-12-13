@@ -63,7 +63,7 @@ export default function Tracks() {
           <div className="tracks container">
             {/* main heading */}
             <div className="main-heading">
-              <h2>Avaliable Content</h2>
+              <h2>Avaliable Subject</h2>
             </div>
 
             {/* tracks cards */}
