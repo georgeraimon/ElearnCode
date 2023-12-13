@@ -73,3 +73,12 @@ body {
   height: 20rem;
   margin-top: 2.5vh;
 }
+@media only screen and (max-width: 600px) {
+  .add-track-div .card {
+    width: 90%; /* Adjust as needed */
+  }
+
+  .add-track-card .card-body input, .add-track-card .card-body textarea {
+    width: 90%; /* Adjust as needed */
+  }
+}
