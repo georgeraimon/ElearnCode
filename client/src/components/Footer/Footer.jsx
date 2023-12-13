@@ -72,7 +72,7 @@ export default function Footer() {
                   </a>
                   <a
                     className="footer-icon"
-                    href="https://twitter.com/e.learncode"
+                    href="https://twitter.com/elearncode"
                   >
                     <FaSquareXTwitter  className="footer-icon" size={40} />
                   </a>
