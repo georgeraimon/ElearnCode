@@ -11,8 +11,17 @@
     padding-left: 30px;
     padding-right: 30px;
     margin-bottom: 0;
-}
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
     
+}
+.navbar-head {
+    flex: 1;
+    justify-content: flex-start;
+}
+
 .nav-logo{
     width: 180px;
     height: 80px;
@@ -48,6 +57,7 @@
     text-decoration: none;
 }
 
+
 .navbar .buttons button{
     color: #fff;
     background-color: #23b0cf;
@@ -58,13 +68,46 @@
     font-size: 18px;
     font-weight: 600;
     padding: 8px;
-    margin-left: 10px;
+    margin-left: 6px; /* Adjust this value */
     margin-right: 10px;
+    flex: 0;
+    justify-content: flex-end;
     /* hover scale animation */
     transition: all .2s ease-in-out;
 }
+
 
 /* add hover scale animation */
 .navbar .buttons button:hover{
     transform: scale(1.1);
 }
+
+@media (max-width: 768px) {
+    .nav-logo{
+        width: 40px; 
+        height: 20px; 
+    }
+
+    .navbar-links span{
+        font-size: 10px; 
+        padding: 5px; 
+        margin-left: 3px; 
+        margin-right: 3px;
+    }
+
+    .navbar .buttons button{
+        width: 60px; 
+        font-size: 14px; 
+        padding: 8px; 
+        margin-left: 2px;
+        margin-right: 5px; 
+        flex: 0;
+        justify-content: flex-end;
+        transition: all .2s ease-in-out;
+    }
+    .navbar .buttons button:hover{
+        transform: scale(1.1);
+    }
+}
+
+
