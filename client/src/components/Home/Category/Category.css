@@ -68,6 +68,12 @@
     .category .category-card{
         padding: 12px;
         width: 100%; /* Add this */
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
     }
 
     .category .category-card .card-title{
@@ -94,6 +100,12 @@
     .category .category-card{
         padding: 10px;
         width: 100%; /* Add this */
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
     }
 
     .category .category-card .card-title{
