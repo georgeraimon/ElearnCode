@@ -184,7 +184,7 @@ export default function AdminTrack() {
             </div>
           ) : (
             <div className="no-tracks">
-              <h3>No course Available</h3>
+              <h3>No Course Available</h3>
             </div>
           )}
         </div>
