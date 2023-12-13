@@ -39,10 +39,19 @@
 }
 
 .analytics .analytics-main .tableau{
+max-width: 100%;
+  margin: 0 auto;
     margin-top: 2vh;
     margin-bottom: 5vh;
+    width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
-
+.analytics .analytics-main .tableau h1 {
+    margin-bottom: 10px;
+  }
+  
+  
 .analytics .analytics-main .tableau .main-heading{
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.2rem;
@@ -52,3 +61,4 @@
     margin-top: 4vh;
     margin-bottom: 3vh;
 }
+
