@@ -8,7 +8,7 @@
 .analytics .sub-head{
     color: #23b0cf;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .analytics .analytics-main{
@@ -22,8 +22,8 @@
 
 .analytics .analytics-main .bar-chart .form-label{
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: 1.1rem;
+    font-weight: 500;
     color: #0f0f0f;
 }
 
@@ -39,19 +39,19 @@
 }
 
 .analytics .analytics-main .tableau{
-max-width: 100%;
-  margin: 0 auto;
+    max-width: 100%;
+    margin: 0 auto;
     margin-top: 2vh;
     margin-bottom: 5vh;
     width: 100vw;
-  height: 100vh;
-  overflow: hidden;
+    height: 100vh;
+    overflow: hidden;
 }
+
 .analytics .analytics-main .tableau h1 {
     margin-bottom: 10px;
-  }
-  
-  
+}
+
 .analytics .analytics-main .tableau .main-heading{
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.2rem;
