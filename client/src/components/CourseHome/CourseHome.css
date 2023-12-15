@@ -114,8 +114,8 @@ input[type="checkbox"]:checked {
 /* Media query for devices with width less than or equal to 767px */
 @media only screen and (max-width: 767px) {
   .main-course-container .tut-vid .vid-player {
-    width: 80%;
-    height: 40vh;
+    width: 82%;
+    height: 30vh;
   }
 
   .main-course-container .tut-vid .description {
