@@ -66,27 +66,32 @@
         justify-content: space-between;
     }
 
-    .tracks .tracks-card .card {
-        width: 100%;
+    .tracks .tracks-card .card-container {
+        width: calc(50% - 10px);
         margin-top: 3vh;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.35);   
-    cursor: pointer;
-    transition: transform 0.3s;
     }
 
-    .tracks .tracks-card .card .card-img-top {
+    .tracks .tracks-card .card-container .card {
+        width: 100%;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.35);   
+        cursor: pointer;
+        border-radius: 12px;
+        transition: transform 0.3s;
+    }
+
+    .tracks .tracks-card .card-container .card .card-img-top {
         height: 8rem;
     }
 
-    .tracks .tracks-card .card .card-title {
+    .tracks .tracks-card .card-container .card .card-title {
         font-size: 1.3rem;
     }
 
-    .tracks .tracks-card .card .card-text {
+    .tracks .tracks-card .card-container .card .card-text {
         font-size: 1.1rem;
     }
 
-    .tracks .tracks-card .card button {
+    .tracks .tracks-card .card-container .card button {
         width: 5rem;
         font-size: 0.9rem;
     }
