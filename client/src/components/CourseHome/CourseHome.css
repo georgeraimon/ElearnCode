@@ -115,7 +115,7 @@ input[type="checkbox"]:checked {
 @media only screen and (max-width: 767px) {
   .main-course-container .tut-vid .vid-player {
     width: 100%;
-    height: 30vh;
+    height: 28vh;
   }
 
   .main-course-container .tut-vid .description {
