@@ -51,6 +51,60 @@ export default function Tracks() {
     }, 1500);
   }, [navigate]);
 
+  
+   import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { Card, Button, Row, Col } from "react-bootstrap";
+import PreLoader from "../PreLoader/PreLoader";
+import UserNavBar from "../UserNavBar/UserNavBar";
+import Footer from "../Footer/Footer";
+import "./Tracks.css";
+
+export default function Tracks() {
+  const navigate = useNavigate();
+
+  const [loading, setLoading] = useState(false);
+  const [tracks, setTracks] = useState([]);
+
+  useEffect(() => {
+    if (!localStorage.getItem("token")) {
+      navigate("/login");
+    } else {
+      fetch(`${import.meta.env.VITE_APP_BASE_URL}/api/user/verifyToken`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          token: localStorage.getItem("token"),
+        }),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          if (!data.user) {
+            localStorage.removeItem("token");
+            navigate("/");
+          }
+        });
+    }
+
+    fetch(`${import.meta.env.VITE_APP_BASE_URL}/api/user/getAllTracks`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        setTracks(data.tracks);
+      });
+
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1500);
+  }, [navigate]);
+
   return (
     <div>
       {loading ? (
@@ -63,14 +117,13 @@ export default function Tracks() {
           <div className="tracks container">
             {/* main heading */}
             <div className="main-heading">
-              <h2>Avaliable Subject</h2>
+              <h2>Avaliable Content</h2>
             </div>
 
             {/* tracks cards */}
             <div className="tracks-card">
-              <Row>
-                {tracks.map((track) => (
-                <Col key={track._id}>
+              {tracks.map((track) => (
+                <div className="card-container" key={track._id}>
                   <Card>
                     <Card.Body>
                       <Card.Img
@@ -93,9 +146,8 @@ export default function Tracks() {
                       </Button>
                     </Card.Body>
                   </Card>
-                </Col>
-                ))}
-              </Row>
+                </div>
+              ))}
             </div>
           </div>
 
@@ -105,4 +157,4 @@ export default function Tracks() {
       )}
     </div>
   );
-}
+   }
