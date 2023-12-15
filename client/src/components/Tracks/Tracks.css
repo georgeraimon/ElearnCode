@@ -57,4 +57,28 @@
     width: 7rem;
     font-size: 1.1rem;
 }
+@media only screen and (max-width: 767px) {
+ 
+    .tracks .tracks-card .card .card-img-top {
+        height: 8rem;
+    }
+
+    .tracks .tracks-card .card .card-title {
+        font-size: 1.3rem;
+    }
+
+    .tracks .tracks-card .card .card-text {
+        font-size: 1.1rem;
+    }
+
+    .tracks .tracks-card .card button {
+        width: 5rem;
+        font-size: 0.9rem;
+    }
+
+    .tracks .main-heading h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+}
 
