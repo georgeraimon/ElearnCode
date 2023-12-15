@@ -61,7 +61,7 @@
 /* Media query for devices with width less than or equal to 767px */
 @media only screen and (max-width: 767px) {
     .tracks .tracks-card .card{
-        width: 80%;
+        width: 100%;
         margin-top: 3vh;
     }
 
