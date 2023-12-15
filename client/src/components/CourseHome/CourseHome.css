@@ -114,12 +114,12 @@ input[type="checkbox"]:checked {
 /* Media query for devices with width less than or equal to 767px */
 @media only screen and (max-width: 767px) {
   .main-course-container .tut-vid .vid-player {
-    width: 90%;
-    height: 30vh;
+    width: 100%;
+    height: 20vh;
   }
 
   .main-course-container .tut-vid .description {
-    width: 90%;
+    width: 100%;
   }
 
   .main-course-container .tut-vid {
@@ -128,7 +128,7 @@ input[type="checkbox"]:checked {
   }
 
   .main-course-container .tut-topics {
-    width: 90%;
+    width: 100%;
   }
 
   .main-course-container .tut-topics .index {
