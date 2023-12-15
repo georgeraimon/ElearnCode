@@ -105,7 +105,7 @@ export default function Tracks() {
     }, 1500);
   }, [navigate]);
 
-  return (
+   return (
     <div>
       {loading ? (
         <PreLoader />
@@ -122,8 +122,9 @@ export default function Tracks() {
 
             {/* tracks cards */}
             <div className="tracks-card">
-              {tracks.map((track) => (
-                <div className="card-container" key={track._id}>
+              <Row>
+                {tracks.map((track) => (
+                <Col key={track._id}>
                   <Card>
                     <Card.Body>
                       <Card.Img
@@ -146,8 +147,9 @@ export default function Tracks() {
                       </Button>
                     </Card.Body>
                   </Card>
-                </div>
-              ))}
+                </Col>
+                ))}
+              </Row>
             </div>
           </div>
 
@@ -157,4 +159,4 @@ export default function Tracks() {
       )}
     </div>
   );
-   }
+}
