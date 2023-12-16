@@ -131,6 +131,14 @@ export default function AdminHome() {
                       <td className="title">{track.name}</td>
                       <td className="desc">{track.description}</td>
                       <td className="act">
+                         <Button
+                          variant="success"
+                          onClick={() =>
+                            navigate(`/admin_home/view/${track._id}`)
+                          }
+                        >
+                          <MdOutlineOpenInNew /> View
+                        </Button>
                         <Button
                           variant="primary"
                           onClick={() =>
@@ -145,14 +153,7 @@ export default function AdminHome() {
                         >
                           <MdDeleteOutline /> Delete
                         </Button>
-                        <Button
-                          variant="success"
-                          onClick={() =>
-                            navigate(`/admin_home/view/${track._id}`)
-                          }
-                        >
-                          <MdOutlineOpenInNew /> View
-                        </Button>
+                       
                       </td>
                     </tr>
                   ))}
