@@ -178,7 +178,7 @@ export default function TrackHome() {
                 ).length > 0 ? (
                   <>
                     <h2 className="track-heading">
-                      Intermidetate Level Course
+                      Intermediate Level Course
                     </h2>
                     {courses.map((course) =>
                       course.difficulty === "Intermediate" ? (
