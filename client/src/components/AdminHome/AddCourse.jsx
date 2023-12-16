@@ -104,7 +104,7 @@ export default function AddCourse() {
                 >
                   <option value="Beginner">Beginner</option>
                   <option value="Intermediate">Intermediate</option>
-                  <option value="Advance">Advanced</option>
+                  <option value="Advanced">Advanced</option>
                 </Form.Control>
               </Form.Group>
               <Form.Group>
