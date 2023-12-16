@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { Table, Button, Modal } from "react-bootstrap";
-import { FiPlusSquare, FiEdit3 } from "react-icons/fi";
+import { FiPlusSquare, FiEdit2 } from "react-icons/fi";
 import { MdDeleteOutline, MdOutlineOpenInBrowser } from "react-icons/md";
 import ReactPlayer from "react-player";
 import PreLoader from "../PreLoader/PreLoader";
@@ -135,7 +135,7 @@ export default function AdminTrack() {
                               navigate(`/admin_home/edit_Course/${course._id}`)
                             }
                           >
-                            <FiEdit3 /> Edit
+                            <FiEdit2 /> Edit
                           </Button>
                           <Button
                             variant="danger"
