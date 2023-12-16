@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { Table, Button, Modal } from "react-bootstrap";
-import { FiPlus, FiEdit3 } from "react-icons/fi";
-import { MdDeleteOutline, MdOutlineOpenInNew } from "react-icons/md";
+import { FiPlusSquare, FiEdit3 } from "react-icons/fi";
+import { MdDeleteOutline, MdOutlineOpenInBrowser } from "react-icons/md";
 import ReactPlayer from "react-player";
 import PreLoader from "../PreLoader/PreLoader";
 import "./AdminTrack.css";
@@ -98,7 +98,7 @@ export default function AdminTrack() {
               variant="primary"
               onClick={() => navigate("/admin_add_course/" + id)}
             >
-              <FiPlus /> Add Course
+              <FiPlusSquare /> Add Course
             </Button>
           </div>
 
@@ -127,7 +127,7 @@ export default function AdminTrack() {
                         <td className="diff">{course.difficulty}</td>
                         <td className="act">
                           <Button variant="success" onClick={handleShow}>
-                            <MdOutlineOpenInNew /> View
+                            <MdOutlineOpenInBrowser /> View
                           </Button>
                           <Button
                             variant="primary"
