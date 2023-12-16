@@ -63,7 +63,7 @@ export default function AddCourse() {
             setError(true);
             setErrorMessage(data.error);
           } else {
-            navigate("/admin_home/view/$track. id"   ");
+            navigate("/admin_home/view/$track.id");
           }
         });
     }
