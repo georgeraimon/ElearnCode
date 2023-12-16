@@ -69,7 +69,7 @@ export default function AddTrack() {
     <div>
       <div className="add-track-div">
         <Card className="add-track-card">
-          <Card.Title>Add Track</Card.Title>
+          <Card.Title>Add Subject</Card.Title>
           <Card.Body>
             <Form onSubmit={handleSubmit}>
               <Form.Group>
@@ -79,7 +79,7 @@ export default function AddTrack() {
                   name="name"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  placeholder="Enter Track Name"
+                  placeholder="Enter Subject Name"
                 />
               </Form.Group>
               <Form.Group>
@@ -92,7 +92,7 @@ export default function AddTrack() {
                 />
               </Form.Group>
               <Form.Group>
-                <Form.Label htmlFor="image">Track Image</Form.Label>
+                <Form.Label htmlFor="image">Subject Image</Form.Label>
                 <Form.Control
                   type="File"
                   accept="image/*"
@@ -102,7 +102,7 @@ export default function AddTrack() {
                     setImageData(e.target.files[0]);
                   }}
                   name="image"
-                  placeholder="Upload Track Image"
+                  placeholder="Upload Subject Image"
                 />
               </Form.Group>
               <div className="add-track-btn">
