@@ -211,13 +211,13 @@ export default function TrackHome() {
               <Row>
                 {courses.filter(
                   (course) =>
-                    course.difficulty === "Advance" &&
+                    course.difficulty === "Advanced" &&
                     !userCoursesIds.includes(course._id)
                 ).length > 0 ? (
                   <>
                     <h2 className="track-heading">Advanced Level Course</h2>
                     {courses.map((course) =>
-                      course.difficulty === "Advance" ? (
+                      course.difficulty === "Advanced" ? (
                         <Col key={course._id}>
                           <Card className="card-course">
                             <Card.Img
