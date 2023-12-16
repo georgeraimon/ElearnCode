@@ -141,7 +141,7 @@ export default function TrackHome() {
                     !userCoursesIds.includes(course._id)
                 ).length > 0 ? (
                   <>
-                    <h2 className="track-heading">Beginner Level</h2>
+                    <h2 className="track-heading">Beginner Level Course</h2>
                     {courses.map((course) =>
                       course.difficulty === "Beginner" ? (
                         <Col key={course._id}>
@@ -178,7 +178,7 @@ export default function TrackHome() {
                 ).length > 0 ? (
                   <>
                     <h2 className="track-heading">
-                      Intermidetate Level Courses
+                      Intermidetate Level Course
                     </h2>
                     {courses.map((course) =>
                       course.difficulty === "Intermediate" ? (
@@ -215,7 +215,7 @@ export default function TrackHome() {
                     !userCoursesIds.includes(course._id)
                 ).length > 0 ? (
                   <>
-                    <h2 className="track-heading">Advance Level Courses</h2>
+                    <h2 className="track-heading">Advanced Level Course</h2>
                     {courses.map((course) =>
                       course.difficulty === "Advanced" ? (
                         <Col key={course._id}>
