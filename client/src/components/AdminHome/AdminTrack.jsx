@@ -126,7 +126,7 @@ export default function AdminTrack() {
                         <td className="desc">{course.description}</td>
                         <td className="diff">{course.difficulty}</td>
                         <td className="act">
-                          <Button variant="primary" onClick={handleShow}>
+                          <Button variant="success" onClick={handleShow}>
                             <MdOutlineOpenInNew /> View
                           </Button>
                           <Button
