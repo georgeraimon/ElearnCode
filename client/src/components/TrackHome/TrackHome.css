@@ -72,7 +72,8 @@
     }
 
     .main-track .card-course .card-img{
-        height: 13rem;
+        width:80%;
+        height: 9rem;
         
     }
 
