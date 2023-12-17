@@ -177,9 +177,12 @@
     .admin-home .admin-track .tracks tbody .act button{
       font-size: 0.8rem;
       width: 5rem;
+    padding: 0.2rem 0.2rem;
+   
     }
     .admin-home .admin-track .tracks tbody .view-btn{
         font-size: 0.8rem;
         width: 5rem;
+        padding: 0.2rem 0.2rem;
     }
 }
