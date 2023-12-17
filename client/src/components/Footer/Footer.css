@@ -74,14 +74,6 @@
         width: 110px;
     }
 
-.footer{
-    padding-top: 5vh;
-    background-color: #23b8cf;
-    /* set footer to bottom */
-    position: relative;
-    bottom: 0;
-    width: 80%;
-}
     .footer .footer-text h2{
         font-size: 1.4rem;
     }
@@ -109,14 +101,7 @@
         width: 90px;
     }
 
-.footer{
-    padding-top: 5vh;
-    background-color: #23b8cf;
-    /* set footer to bottom */
-    position: relative;
-    bottom: 0;
-    width: 80%;
-}
+
     .footer .footer-text h2,
     .footer .footer-contact h2{
         font-size: 1.2rem;
