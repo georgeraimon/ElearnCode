@@ -2,11 +2,6 @@
 
 
 
-.admin-home {
-  background-color: #a0d2eb;
-}
-
-
 
 .admin-home .admin-home-heading{
     margin-top: 3vh;
@@ -29,8 +24,7 @@
 }
 
 .admin-home .admin-track{
-    position: relative;
-background-color: #a0d2eb;    
+    position: relative;    
 }
 
 
