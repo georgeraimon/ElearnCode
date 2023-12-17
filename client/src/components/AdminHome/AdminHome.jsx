@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Table, Button } from "react-bootstrap";
 import { FiPlusSquare, FiEdit3 } from "react-icons/fi";
+import { CiLogout } from "react-icons/ci";
 import { MdDeleteOutline, MdOutlineOpenInBrowser } from "react-icons/md";
 import PreLoader from "../PreLoader/PreLoader";
 import "./AdminHome.css";
@@ -96,7 +97,7 @@ export default function AdminHome() {
                 navigate("/admin_login");
               }}
             >
-              Logout
+              <CiLogout /> Logout
             </Button>
           </div>
 
