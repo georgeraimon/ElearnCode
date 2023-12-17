@@ -39,7 +39,7 @@
 /* Media query for devices with width less than or equal to 768px */
 @media (max-width: 768px) {
     .header .heading{
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .header .sub-heading{
