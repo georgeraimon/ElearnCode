@@ -191,6 +191,7 @@
     .admin-home .admin-logout button{
       font-size: 0.8rem;
       width: 5rem;
+      padding: 0.2rem 0.2rem;
     }
     
   }
