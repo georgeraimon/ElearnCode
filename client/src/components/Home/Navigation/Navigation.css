@@ -69,7 +69,7 @@
     font-weight: 600;
     padding: 8px;
     margin-left: -20px; /* Adjust this value */
-    margin-right: 30px;
+    margin-right: 25px;
     flex: 0;
     justify-content: flex-end;
     /* hover scale animation */
@@ -96,11 +96,11 @@
     }
 
     .navbar .buttons button{
-        width: 60px; 
+        width: 65px; 
         font-size: 14px; 
         padding: 8px; 
         margin-left: -10px;
-        margin-right: 20px; 
+        margin-right: 15px; 
         flex: 0;
         justify-content: flex-end;
         transition: all .2s ease-in-out;
