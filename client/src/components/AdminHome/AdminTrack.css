@@ -157,10 +157,10 @@
       font-size: 1.3rem;
     }
     .admin-home .admin-track .add-track button{
-      font-size: 0.7rem;
+     font-size: 0.7rem;
       width: 6rem;
       height: 1.8rem;
-      border-radius: 20px;
+      padding: 0.2rem 0.2rem;
     }
     .admin-home .admin-track .tracks thead{
       font-size: 0.8rem;
