@@ -31,7 +31,7 @@ export default function Footer() {
                 We are a team of students who are passionate about learning and
                 sharing knowledge. We are always open to new ideas and
                 collaborations. If you have any questions, please contact us at{" "}
-                <a href="mailto:elearncode@gmail.com">Here</a><br/>
+                <a href="mailto:helpdesk.elearncode@gmail.com">Here</a><br/>
                 Copyright © 2023, All rights reserved.
               </p>
             </div>
@@ -41,7 +41,7 @@ export default function Footer() {
               <div className="footer-contact">
                 <h2>Contact Us</h2>
                 <Row>
-                  <a href="mailto:support@elearncode.com">
+                  <a href="mailto:helpdesk.elearncode@gmail.com">
                     <MdEmail className="contact-icon"/>{" "}
                     support@elearncode.com
                   </a>
