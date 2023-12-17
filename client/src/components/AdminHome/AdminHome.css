@@ -149,8 +149,8 @@
     }
 
    .admin-home .admin-track .tracks tbody img{
-      height: 2rem;
-      width: 4rem;
+      height: 4rem;
+      width: 8rem;
   }
     .admin-home .admin-track .add-track button{
       font-size: 0.8rem;
