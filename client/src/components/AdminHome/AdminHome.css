@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
 
+
+
+.admin-home {
+  background-color: #a0d2eb;
+}
+
 .admin-home .admin-home-heading{
     margin-top: 3vh;
     margin-bottom: 3vh;
