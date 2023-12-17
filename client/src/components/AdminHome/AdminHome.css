@@ -139,7 +139,7 @@
     margin-bottom: 3vh;
     text-align: center;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .admin-home .admin-home-heading h1{
       font-size: 1.5rem;
     }
@@ -148,10 +148,10 @@
       font-size: 2rem;
     }
 
-    .admin-home .admin-track .tracks tbody img{
-    height: 4rem;
-    width: 8rem;
-}
+   .admin-home .admin-track .tracks tbody img{
+      height: 0.3rem;
+      width: 1.3rem;
+  }
     .admin-home .admin-track .add-track button{
       font-size: 0.8rem;
       width: 5rem;
