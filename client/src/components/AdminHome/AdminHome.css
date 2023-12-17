@@ -8,7 +8,7 @@
 .admin-home .admin-home-heading h1{
     color: #000;
     font-family: 'Roboto Slab', serif;
-    font-size: 2.3rem;
+    font-size: 2.1rem;
 }
 
 .admin-home .admin-track .admin-track-heading h2{
@@ -17,12 +17,13 @@
     color: #23b0cf;
     text-align: center;
     font-family: 'Roboto Slab', serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .admin-home .admin-track{
     position: relative;
 }
+
 
 .admin-home .admin-track .add-track{
     position: absolute;
@@ -36,14 +37,14 @@
 }
 
 .admin-home .admin-track .add-track button{
-    background-color: #23b0cf;
-    color: #fff;
-    padding: 0.2rem 0.2rem; /* Reduced padding */
-    border-radius: 7px;
-    font-family: 'Roboto Slab', serif;
-    font-size: 0.8rem; /* Reduced font size */
-    width: 5rem;
-    box-sizing: border-box; /* Added box-sizing */
+  background-color: #23b0cf;
+  color: #fff;
+  padding: 0.5rem 0.5rem;
+  border-radius: 13px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.8rem;
+  box-sizing: border-box; 
+  width: 6rem;
 }
 
 
@@ -55,6 +56,7 @@
 .admin-home .admin-track .tracks{
     margin-top: 12vh;
     margin-bottom: 3vh;
+    
 }
 
 .admin-home .admin-track .tracks thead{
@@ -124,10 +126,12 @@
     background-color: #23b0cf;
     color: #fff;
     padding: 0.5rem 0.5rem;
-    border-radius: 6px;
+    border-radius: 18px;
     font-family: 'Roboto Slab', serif;
     font-size: 1rem;
+    box-sizing: border-box; 
     width: 6rem;
+
 }
 
 .admin-home .admin-logout button:hover{
@@ -186,7 +190,7 @@
   
     .admin-home .admin-logout button{
       font-size: 0.8rem;
-      width: 4rem;
+      width: 5rem;
     }
     
   }
