@@ -84,13 +84,13 @@
 
 @media (max-width: 768px) {
     .nav-logo{
-        width: 35px; 
-        height: 20px; 
+        width: 30px; 
+        height: 15px; 
     }
 
     .navbar-links span{
-        font-size: 9px; 
-        padding: 3px; 
+        font-size: 8px; 
+        padding: 1px; 
         margin-left: 4px; 
         margin-right: 1px;
     }
