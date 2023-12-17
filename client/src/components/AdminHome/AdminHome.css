@@ -108,6 +108,7 @@
     font-size: 1.1rem;
     border-radius: 18px;
     width: 6rem;
+    padding: 0.5rem 0.5rem;
 }
 
 .admin-home .admin-logout{
@@ -186,6 +187,7 @@
     .admin-home .admin-track .tracks tbody .act button{
       font-size: 0.7rem;
       width: 4rem;
+        padding: 0.2rem 0.2rem;
     }
   
     .admin-home .admin-logout button{
