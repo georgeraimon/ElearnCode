@@ -3,7 +3,11 @@
 
 body
 {
-  background-color:#C2CAD0;
+  background-color: #c2cad0;
+}
+
+.admin-home{
+background-color: #c2cad0;
 }
 
 .admin-home .admin-home-heading{
