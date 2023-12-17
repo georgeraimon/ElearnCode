@@ -139,46 +139,56 @@
     margin-bottom: 3vh;
     text-align: center;
 }
+
 @media only screen and (max-width: 768px) {
     .admin-home .admin-home-heading h1{
-      font-size: 1.5rem;
+      font-size: 1rem;
     }
+    .admin-home .admin-track .tracks thead{
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.4rem;
+    text-align: center;
+}
+    .admin-home .admin-track .tracks tbody img{
+      height: 3.5rem;
+      width: 7rem;
+  }
+  .admin-home .admin-track .tracks{
+    margin-top: 10vh;
+    margin-bottom: 2.8vh;
+}
   
     .admin-home .admin-track .admin-track-heading h2{
-      font-size: 2rem;
+      font-size: 1.3rem;
     }
-
-   .admin-home .admin-track .tracks tbody img{
-      height: 4rem;
-      width: 8rem;
-  }
+  
     .admin-home .admin-track .add-track button{
       font-size: 0.8rem;
       width: 5rem;
     }
   
     .admin-home .admin-track .tracks thead{
-      font-size: 1.2rem;
+      font-size: 0.8rem;
     }
   
     .admin-home .admin-track .tracks tbody .title{
-      font-size: 1.5rem;
+      font-size: 1.1rem;
     }
   
     .admin-home .admin-track .tracks tbody .desc{
-      font-size: 0.9rem;
+      font-size: 0.7rem;
     }
   
     .admin-home .admin-track .tracks tbody .act button{
-      font-size: 0.8rem;
-      width: 5rem;
+      font-size: 0.7rem;
+      width: 4rem;
     }
   
     .admin-home .admin-logout button{
       font-size: 0.8rem;
-      width: 6rem;
+      width: 4rem;
     }
     
   }
   
- 
+  
