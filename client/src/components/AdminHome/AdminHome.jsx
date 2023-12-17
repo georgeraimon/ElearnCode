@@ -71,7 +71,7 @@ export default function AdminHome() {
   };
 
   return (
-    <div style={{background-color: "#eceff0"}} >
+    <div>
        {loading ? (
         <PreLoader />
       ) : (
