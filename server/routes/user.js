@@ -281,9 +281,7 @@ router.post("/compile", async (req, res) => {
         stdin: input,
       },
     });
-
     console.log(response.data);
-
     let result = await axios.request({
       method: "GET",
       url: `${compileUrl}/${response.data.token}`,
@@ -305,7 +303,6 @@ router.post("/compile", async (req, res) => {
         },
       });
     }
-
     console.log(result.data);
     return res.status(200).json({
       output: result.data,
@@ -316,6 +313,8 @@ router.post("/compile", async (req, res) => {
     });
   }
 });
+
+
 
 
 
