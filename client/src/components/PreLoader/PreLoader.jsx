@@ -5,7 +5,7 @@ import "./PreLoader.css";
 export default function PreLoader() {
     return (
         <div className="pre-loader">
-          <WhisperSpinner  size={50} frontColor="#23b0cf" backColor="#23b0cf"/>
+          <WhisperSpinner  size={75} frontColor="#23b0cf" backColor="#23b0cf"/>
         </div>
     );
 }
