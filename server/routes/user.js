@@ -260,7 +260,6 @@ router.post("/handleCourseProgress", async (req, res) => {
   }
 });
 
-
 router.post("/compile", async (req, res) => {
   const { code, language, input } = req.body;
   console.log(code, language, input);
@@ -291,7 +290,6 @@ router.post("/compile", async (req, res) => {
         "x-rapidapi-key": process.env.VITE_RAPIDAPI_KEY,
       },
     });
-
     while (result.data.status.description === 'Processing') {
       result = await axios.request({
         method: "GET",
@@ -303,6 +301,7 @@ router.post("/compile", async (req, res) => {
         },
       });
     }
+
     console.log(result.data);
     return res.status(200).json({
       output: result.data,
@@ -313,11 +312,6 @@ router.post("/compile", async (req, res) => {
     });
   }
 });
-
-
-
-
-
 
 //const userRoute = router;
 export default router;
