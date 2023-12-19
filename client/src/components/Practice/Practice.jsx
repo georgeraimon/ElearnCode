@@ -140,6 +140,7 @@ export default function Practice() {
           <UserNavBar />
 
           {/* main heading */}
+          
           <div className="practice container">
             <h2>Hello {name}</h2>
             <div className="editor">
@@ -248,5 +249,5 @@ export default function Practice() {
         </div>
       )}
     </div>
-  );
+  );  
 }
