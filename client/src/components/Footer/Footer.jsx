@@ -32,7 +32,7 @@ export default function Footer() {
                 sharing knowledge. We are always open to new ideas and
                 collaborations. If you have any questions, please contact us at{" "}
                 <a href="mailto:helpdesk.elearncode@gmail.com">Here</a><br/>
-                Copyright © 2025, All rights reserved.
+                Copyright ©2025, All rights reserved.
               </p>
             </div>
           </Col>
