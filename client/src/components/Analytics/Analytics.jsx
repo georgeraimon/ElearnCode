@@ -18,7 +18,7 @@ export default function Analytics() {
   const [barData, setBarData] = useState([
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
   ]);
-  const [year, setYear] = useState("2024");
+  const [year, setYear] = useState("2025");
   const [userCourse, setUserCourse] = useState([]);
 
   useEffect(() => {
